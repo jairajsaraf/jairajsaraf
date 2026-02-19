@@ -1,16 +1,54 @@
-## Hi there 👋
+# Hey, I'm Jairaj 👋
 
-<!--
-**jairajsaraf/jairajsaraf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**MS in Management Information Systems @ Texas A&M University (May 2026)**
 
-Here are some ideas to get you started:
+I build data pipelines, search systems, and ML models — and I care about making them production-grade, not just notebook-grade.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Currently a **Graduate Research Assistant** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), where I work on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), build automated ETL workflows in FME, and refactor legacy SQL into performant set-based operations.
+
+Previously a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines across Oracle/Snowflake/AWS and contributed **29 merged PRs across 5 Pentaho open-source repositories**.
+
+---
+
+### What I Work With
+
+| | |
+|---|---|
+| **Languages** | Python, Java, SQL, Bash |
+| **Data Engineering** | Pentaho PDI, FME, SSIS, dbt, Airflow, Kafka |
+| **Cloud & Infra** | AWS (S3, Redshift, Glue, EC2), Snowflake, Docker, Jenkins CI/CD |
+| **ML & Search** | scikit-learn, TensorFlow, FAISS, Sentence Transformers, BM25 |
+| **BI & Analytics** | Power BI (DAX, RLS), Tableau, Advanced Excel |
+| **Databases** | Oracle, SQL Server, Snowflake, Redshift, MongoDB, MariaDB |
+
+---
+
+### Featured Projects
+
+🔍 **[Hybrid Product Search Ranker](https://github.com/jairajsaraf/heb-product-search)**
+Hybrid BM25 + transformer embedding ranking system for e-commerce product search. Achieved 25.67% relative improvement over keyword-only baseline on 3,287 products. Built with Poetry, Pytest, and Fire CLI for reproducible evaluation across 12 configurations.
+
+📄 **[Regulatory Document Classifier API](https://github.com/jairajsaraf/document_classifier_AI)**
+FastAPI service classifying multi-modal documents (PDF/images) into regulatory categories using dual-LLM verification (Claude 3 Haiku + GPT-3.5). Includes PII detection with Luhn validation, Tesseract OCR integration, and audit-compliant citation generation. Reduced manual review by 60–70%.
+
+🏠 **[Hybrid Data Warehouse](https://github.com/jairajsaraf/YOUR_REPO)**
+End-to-end DW combining SQL Server (SSIS staging) → S3 → Redshift dimensional model. Incremental loads, data validation, and tuned dist/sort keys for BI consumption across Power BI, Tableau, and SSRS.
+
+🎵 **[FeatureBeats — Hit Song Predictor](https://github.com/jairajsaraf/FeatureBeats)**
+ML pipeline predicting commercial hits from Spotify audio features. Dual-model approach (Logistic Regression + XGBoost) with SHAP explainability, SMOTE variants for class imbalance, and a Streamlit UI for real-time predictions. 0.80–0.92 ROC-AUC.
+
+🧠 **[Deep Learning for m-Height Prediction](https://github.com/jairajsaraf/YOUR_REPO)**
+10.9M parameter neural network with multi-head attention and residual blocks for predicting computationally expensive coding theory properties. Domain-aware data augmentation achieving perfect class balance across 108K samples. Trained on TAMU HPRC Grace cluster.
+
+
+---
+
+### Open Source
+
+Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 29 merged pull requests across 5 repositories, focusing on data integration tooling and pipeline reliability.
+
+---
+
+### Let's Connect
+
+📧 [jairaj.saraf@tamu.edu](mailto:jairaj.saraf@tamu.edu) · 💼 [LinkedIn](https://linkedin.com/in/jairajsaraf/)
