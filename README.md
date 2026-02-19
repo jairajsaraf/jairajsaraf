@@ -47,6 +47,8 @@ ML pipeline predicting commercial hits from Spotify audio features. Dual-model a
 
 Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 29 merged pull requests across 5 repositories, focusing on data integration tooling and pipeline reliability.
 
+👉 [See contributions → github.com/jsaraf](https://github.com/jsaraf)
+
 ---
 
 ### Let's Connect
