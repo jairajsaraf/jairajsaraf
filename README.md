@@ -6,7 +6,7 @@ I build data pipelines, search systems, and ML models — and I care about makin
 
 Currently a **Graduate Research Assistant** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), where I work on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), build automated ETL workflows in FME, and refactor legacy SQL into performant set-based operations.
 
-Previously a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines across Oracle/Snowflake/AWS and contributed **29 merged PRs across 5 Pentaho open-source repositories**.
+Previously a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines across Oracle/Snowflake/AWS.
 
 ---
 
@@ -45,7 +45,7 @@ ML pipeline predicting commercial hits from Spotify audio features. Dual-model a
 
 ### Open Source
 
-Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 29 merged pull requests across 5 repositories, focusing on data integration tooling and pipeline reliability.
+Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara, focusing on data integration tooling and pipeline reliability.
 
 👉 [See contributions → github.com/jsaraf](https://github.com/jsaraf)
 
