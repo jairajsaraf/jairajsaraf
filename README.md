@@ -6,51 +6,55 @@ I build data pipelines, search systems, and ML models — and I care about makin
 
 Currently a **Graduate Research Assistant** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), where I work on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), build automated ETL workflows in FME, and refactor legacy SQL into performant set-based operations.
 
-Previously a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines across Oracle/Snowflake/AWS.
+Previously a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines (1TB/day) across Oracle/Snowflake/AWS using Pentaho PDI, integrated Kafka ingestion at 35K events/sec, and contributed 29 merged PRs across 5 open-source Pentaho repositories.
 
 ---
 
 ### What I Work With
 
-| | |
-|---|---|
+|  |  |
+| --- | --- |
 | **Languages** | Python, Java, SQL, Bash |
-| **Data Engineering** | Pentaho PDI, FME, SSIS, dbt, Airflow, Kafka |
-| **Cloud & Infra** | AWS (S3, Redshift, Glue, EC2), Snowflake, Docker, Jenkins CI/CD |
-| **ML & Search** | scikit-learn, TensorFlow, FAISS, Sentence Transformers, BM25 |
-| **BI & Analytics** | Power BI (DAX, RLS), Tableau, Advanced Excel |
-| **Databases** | Oracle, SQL Server, Snowflake, Redshift, MongoDB, MariaDB |
+| **Data Engineering** | PySpark, Pentaho PDI, FME, SSIS, dbt, Airflow, Kafka |
+| **Cloud & Infra** | AWS (S3, Redshift, Glue, EC2), Snowflake, Docker, Jenkins CI/CD, GitHub Actions |
+| **ML & Search** | scikit-learn, TensorFlow, FAISS, Sentence Transformers, BM25, XGBoost, SHAP |
+| **BI & Analytics** | Power BI (DAX, RLS), Tableau, SSRS, Advanced Excel |
+| **Databases** | Oracle, SQL Server, Snowflake, Redshift, DuckDB, MongoDB, MariaDB |
+
+**Certifications:** AWS Certified Solutions Architect – Associate
 
 ---
 
 ### Featured Projects
 
+🚰 **[Rentals Data Pipeline](https://github.com/jairajsaraf/rentals-data-pipeline)**
+Production-style PySpark ETL pipeline processing Zillow ZORI rental data. Window functions for MoM rent change and state-level ranking, configurable data quality framework (warn/fail severity), partitioned Parquet output by geography and year. Orchestrated with Airflow TaskFlow DAG, tested with pytest, CI via parallel GitHub Actions (lint + test).
+`PySpark · Airflow · AWS S3 · DuckDB · pytest · GitHub Actions`
+
 🔍 **[Hybrid Product Search Ranker](https://github.com/jairajsaraf/heb-product-search)**
-Hybrid BM25 + transformer embedding ranking system for e-commerce product search. Achieved 25.67% relative improvement over keyword-only baseline on 3,287 products. Built with Poetry, Pytest, and Fire CLI for reproducible evaluation across 12 configurations.
+Hybrid BM25 + transformer embedding ranking system for e-commerce product search. Achieved 25.67% relative improvement over keyword-only baseline on 3,287 products. Built with Poetry, Pytest, and Fire CLI for reproducible evaluation across 12 configurations spanning 3 transformer models.
+`Python · Sentence Transformers · BM25 · Pytest · Poetry`
 
 📄 **[Regulatory Document Classifier API](https://github.com/jairajsaraf/document_classifier_AI)**
-FastAPI service classifying multi-modal documents (PDF/images) into regulatory categories using dual-LLM verification (Claude 3 Haiku + GPT-3.5). Includes PII detection with Luhn validation, Tesseract OCR integration, and audit-compliant citation generation. Reduced manual review by 60–70%.
-
-🏠 **[Hybrid Data Warehouse](https://github.com/jairajsaraf/YOUR_REPO)**
-End-to-end DW combining SQL Server (SSIS staging) → S3 → Redshift dimensional model. Incremental loads, data validation, and tuned dist/sort keys for BI consumption across Power BI, Tableau, and SSRS.
+FastAPI service classifying multi-modal documents (PDF/images) into regulatory categories using dual-LLM verification (Claude 3 Haiku + GPT-3.5). Includes PII detection with Luhn validation, Tesseract OCR integration, and audit-compliant citation generation. Reduced manual review by 65%.
+`FastAPI · Claude 3 Haiku · GPT-3.5 · Tesseract OCR · SQLite`
 
 🎵 **[FeatureBeats — Hit Song Predictor](https://github.com/jairajsaraf/FeatureBeats)**
 ML pipeline predicting commercial hits from Spotify audio features. Dual-model approach (Logistic Regression + XGBoost) with SHAP explainability, SMOTE variants for class imbalance, and a Streamlit UI for real-time predictions. 0.80–0.92 ROC-AUC.
+`Python · XGBoost · SHAP · Streamlit · scikit-learn`
 
-🧠 **[Deep Learning for m-Height Prediction](https://github.com/jairajsaraf/YOUR_REPO)**
-10.9M parameter neural network with multi-head attention and residual blocks for predicting computationally expensive coding theory properties. Domain-aware data augmentation achieving perfect class balance across 108K samples. Trained on TAMU HPRC Grace cluster.
-
+🍽️ **[Mai Shen Yun — Inventory Analytics Dashboard](https://github.com/jairajsaraf/mai-shen-yun)**
+5-module Streamlit dashboard for restaurant inventory management. Multi-method demand forecasting (Prophet, exponential smoothing, ensemble) with MAE/MAPE metrics. EOQ optimization, ABC classification, and reorder point calculations.
+`Python · Prophet · Streamlit · Plotly · Altair`
 
 ---
 
 ### Open Source
 
-Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara, focusing on data integration tooling and pipeline reliability.
-
-👉 [See contributions → github.com/jsaraf](https://github.com/jsaraf)
+Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 29 merged PRs across 5 repositories focused on plugin stability, chart type features, and WCAG compliance across the Analyzer platform.
 
 ---
 
 ### Let's Connect
 
-📧 [jairaj.saraf@tamu.edu](mailto:jairaj.saraf@tamu.edu) · 💼 [LinkedIn](https://linkedin.com/in/jairajsaraf/)
+📧 [jairaj.saraf@tamu.edu](mailto:jairaj.saraf@tamu.edu) · 💼 [LinkedIn](https://linkedin.com/in/jairajsaraf/) · 🐙 [GitHub](https://github.com/jairajsaraf)
