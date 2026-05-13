@@ -32,7 +32,7 @@ Production-style PySpark ETL pipeline processing Zillow ZORI rental data. Window
 `PySpark · Airflow · dbt · DuckDB · AWS S3 · pytest · GitHub Actions`
 
 💬 **[PropTalk — Conversational Analytics](https://github.com/jairajsaraf/proptalk)**
-Natural language to SQL interface over a CoreLogic/MLS SQL Server DataMart. Multi-model backend (Claude Sonnet, GPT-4.1, Gemini 2.5 Flash) with SELECT-only query enforcement and table whitelisting for safe, ad-hoc analytics. Built with Streamlit and pyodbc; production-deployed at TRERC.
+Natural language to SQL interface over a CoreLogic/MLS SQL Server DataMart. Multi-model backend (Claude Sonnet, GPT-4.1, Gemini 2.5 Flash) with SELECT-only query enforcement and table whitelisting for safe, ad-hoc analytics. Built with Streamlit and pyodbc.
 `Python · Streamlit · Claude · GPT-4.1 · Gemini · SQL Server · pyodbc`
 
 🔍 **[Hybrid Product Search Ranker](https://github.com/jairajsaraf/heb-product-search)**
