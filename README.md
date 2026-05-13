@@ -4,7 +4,7 @@
 
 I build data pipelines, search systems, and ML models — and I care about making them production-grade, not just notebook-grade.
 
-Currently a **Graduate Research Assistant** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), where I work on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), build automated ETL workflows in FME, and refactor legacy SQL into performant set-based operations.
+In my previous role as a **Data Analytics Engineer (Research Assistant)** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), where I work on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), build automated ETL workflows in FME, and refactor legacy SQL into performant set-based operations.
 
 Previously a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines (1TB/day) across Oracle/Snowflake/AWS using Pentaho PDI, integrated Kafka ingestion at 35K events/sec, and contributed 40 merged PRs across 5 open-source Pentaho repositories.
 
