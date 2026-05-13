@@ -6,7 +6,7 @@ I build data pipelines, search systems, and ML models — and I care about makin
 
 Currently a **Graduate Research Assistant** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), where I work on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), build automated ETL workflows in FME, and refactor legacy SQL into performant set-based operations.
 
-Previously a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines (1TB/day) across Oracle/Snowflake/AWS using Pentaho PDI, integrated Kafka ingestion at 35K events/sec, and contributed 29 merged PRs across 5 open-source Pentaho repositories.
+Previously a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines (1TB/day) across Oracle/Snowflake/AWS using Pentaho PDI, integrated Kafka ingestion at 35K events/sec, and contributed 40 merged PRs across 5 open-source Pentaho repositories.
 
 ---
 
@@ -28,11 +28,15 @@ Previously a **Software Development Engineer at Hitachi Vantara**, where I owned
 ### Featured Projects
 
 🚰 **[Rentals Data Pipeline](https://github.com/jairajsaraf/rentals-data-pipeline)**
-Production-style PySpark ETL pipeline processing Zillow ZORI rental data. Window functions for MoM rent change and state-level ranking, configurable data quality framework (warn/fail severity), partitioned Parquet output by geography and year. Orchestrated with Airflow TaskFlow DAG, tested with pytest, CI via parallel GitHub Actions (lint + test).
-`PySpark · Airflow · AWS S3 · DuckDB · pytest · GitHub Actions`
+Production-style PySpark ETL pipeline processing Zillow ZORI rental data. Window functions for MoM rent change and state-level ranking, configurable data quality framework (warn/fail severity), partitioned Parquet output by geography and year. Orchestrated with Airflow TaskFlow DAG, dbt models over DuckDB for staging and mart layers, tested with pytest, CI via parallel GitHub Actions (lint + test).
+`PySpark · Airflow · dbt · DuckDB · AWS S3 · pytest · GitHub Actions`
+
+💬 **[PropTalk — Conversational Analytics](https://github.com/jairajsaraf/proptalk)**
+Natural language to SQL interface over a CoreLogic/MLS SQL Server DataMart. Multi-model backend (Claude Sonnet, GPT-4.1, Gemini 2.5 Flash) with SELECT-only query enforcement and table whitelisting for safe, ad-hoc analytics. Built with Streamlit and pyodbc; production-deployed at TRERC.
+`Python · Streamlit · Claude · GPT-4.1 · Gemini · SQL Server · pyodbc`
 
 🔍 **[Hybrid Product Search Ranker](https://github.com/jairajsaraf/heb-product-search)**
-Hybrid BM25 + transformer embedding ranking system for e-commerce product search. Achieved 25.67% relative improvement over keyword-only baseline on 3,287 products. Built with Poetry, Pytest, and Fire CLI for reproducible evaluation across 12 configurations spanning 3 transformer models.
+Hybrid BM25 + transformer embedding ranking system for e-commerce product search. Achieved 26% relative improvement over keyword-only baseline on 3,287 products. Built with Poetry, Pytest, and Fire CLI for reproducible evaluation across 12 configurations spanning 3 transformer models.
 `Python · Sentence Transformers · BM25 · Pytest · Poetry`
 
 📄 **[Regulatory Document Classifier API](https://github.com/jairajsaraf/document_classifier_AI)**
@@ -51,7 +55,7 @@ ML pipeline predicting commercial hits from Spotify audio features. Dual-model a
 
 ### Open Source
 
-Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 29 merged PRs across 5 repositories focused on plugin stability, chart type features, and WCAG compliance across the Analyzer platform.
+Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 40 merged PRs across 5 repositories focused on plugin stability, chart type features, and WCAG compliance across the Analyzer platform.
 
 ---
 
