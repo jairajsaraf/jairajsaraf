@@ -2,11 +2,15 @@
 
 **MS in Management Information Systems @ Texas A&M University (May 2026)**
 
-I build data pipelines, search systems, and ML models — and I care about making them production-grade, not just notebook-grade.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/jairajsaraf/)
+[![Email](https://img.shields.io/badge/Email-EA4335?logo=gmail&logoColor=white)](mailto:jairaj.saraf@tamu.edu)
+[![AWS Certified Solutions Architect – Associate](https://img.shields.io/badge/AWS_Certified-Solutions_Architect_Associate-FF9900?logo=amazonwebservices&logoColor=white)](https://www.credly.com/badges/c726335c-0a03-4a30-9b7a-b51b017d486c/public_url)
 
-In my previous role as a **Data Analytics Engineer (Research Assistant)** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), I worked on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), built automated ETL workflows in FME, and refactor legacy SQL into performant set-based operations.
+I build data pipelines, search systems, ML models, and LLM-powered applications — and I care about making them production-grade, not just notebook-grade.
 
-Before that, I worked as a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines (1TB/day) across Oracle/Snowflake/AWS using Pentaho PDI, integrated Kafka ingestion at 35K events/sec, and contributed 40 merged PRs across 5 open-source Pentaho repositories.
+In my previous role as a **Data Analytics Engineer (Research Assistant)** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), I worked on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), built automated ETL workflows in FME, and refactored legacy SQL into performant set-based operations.
+
+Before that, I worked as a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines (1TB/day) across Oracle/Snowflake/AWS using Pentaho PDI, integrated Kafka ingestion at 35K events/sec, and contributed 20+ merged PRs across 5 open-source Pentaho repositories.
 
 ---
 
@@ -15,17 +19,22 @@ Before that, I worked as a **Software Development Engineer at Hitachi Vantara**,
 |  |  |
 | --- | --- |
 | **Languages** | Python, Java, SQL, Bash |
-| **Data Engineering** | PySpark, Pentaho PDI, FME, SSIS, dbt, Airflow, Kafka |
+| **Data Engineering** | PySpark, Pentaho PDI, FME, SSIS, dbt, Airflow, Kafka, Apache Iceberg |
 | **Cloud & Infra** | AWS (S3, Redshift, Glue, EC2), Snowflake, Docker, Jenkins CI/CD, GitHub Actions |
+| **LLM & AI** | Claude, GPT-4, Gemini, FastAPI, OpenAPI tool-calling agents, prompt engineering |
 | **ML & Search** | scikit-learn, TensorFlow, FAISS, Sentence Transformers, BM25, XGBoost, SHAP |
 | **BI & Analytics** | Power BI (DAX, RLS), Tableau, SSRS, Advanced Excel |
 | **Databases** | Oracle, SQL Server, Snowflake, Redshift, DuckDB, MongoDB, MariaDB |
 
-**Certifications:** AWS Certified Solutions Architect – Associate
+**Certifications:** AWS Certified Solutions Architect – Associate · DataCamp Certified Data Engineer · Professional Scrum Product Owner I (PSPO-I)
 
 ---
 
 ### Featured Projects
+
+⚙️ **[Real-Time Agentic Data Platform](https://github.com/jairajsaraf/realtime-agentic-data-platform)**
+Catalog-backed Apache Iceberg lakehouse (pyiceberg + DuckDB over S3 / LocalStack) with schema and partition evolution, snapshot time-travel, and Pandera data-quality gates over scheduled micro-batch ingestion. A read-only FastAPI serving layer exposes the lakehouse, and a human-in-the-loop NL agent answers data questions by calling that API as OpenAPI-derived tools — with bounded turn/tool budgets and snapshot-cited provenance. Deterministic CI via a `FakeLLMClient`, with GitHub Actions and coverage reporting.
+`Apache Iceberg · pyiceberg · DuckDB · FastAPI · Pandera · Docker · GitHub Actions`
 
 🚰 **[Rentals Data Pipeline](https://github.com/jairajsaraf/rentals-data-pipeline)**
 Production-style PySpark ETL pipeline processing Zillow ZORI rental data. Window functions for MoM rent change and state-level ranking, configurable data quality framework (warn/fail severity), partitioned Parquet output by geography and year. Orchestrated with Airflow TaskFlow DAG, dbt models over DuckDB for staging and mart layers, tested with pytest, CI via parallel GitHub Actions (lint + test).
@@ -55,7 +64,7 @@ ML pipeline predicting commercial hits from Spotify audio features. Dual-model a
 
 ### Open Source
 
-Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 40 merged PRs across 5 repositories focused on plugin stability, chart type features, and WCAG compliance across the Analyzer platform.
+Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 20+ merged PRs across 5 repositories focused on plugin stability, chart-type features, and accessibility improvements (keyboard navigation, focus management) in the Analyzer web UI.
 
 ---
 
