@@ -3,7 +3,7 @@
 **MS in Management Information Systems @ Texas A&M University (May 2026)**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/jairajsaraf/)
-[![Email](https://img.shields.io/badge/Email-EA4335?logo=gmail&logoColor=white)](mailto:jairaj.saraf@tamu.edu)
+[![Email](https://img.shields.io/badge/Email-EA4335?logo=gmail&logoColor=white)](mailto:jairaj.saraf01@gmail.com)
 [![AWS Certified Solutions Architect – Associate](https://img.shields.io/badge/AWS_Certified-Solutions_Architect_Associate-FF9900?logo=amazonwebservices&logoColor=white)](https://www.credly.com/badges/c726335c-0a03-4a30-9b7a-b51b017d486c/public_url)
 
 I build data pipelines, search systems, ML models, and LLM-powered applications — and I care about making them production-grade, not just notebook-grade.
@@ -70,4 +70,4 @@ Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 2
 
 ### Let's Connect
 
-📧 [jairaj.saraf@tamu.edu](mailto:jairaj.saraf@tamu.edu) · 💼 [LinkedIn](https://linkedin.com/in/jairajsaraf/) · 🐙 [GitHub](https://github.com/jairajsaraf)
+📧 [jairaj.saraf01@gmail.com](mailto:jairaj.saraf01@gmail.com) · 💼 [LinkedIn](https://linkedin.com/in/jairajsaraf/) · 🐙 [GitHub](https://github.com/jairajsaraf)
