@@ -19,14 +19,14 @@ Before that, I worked as a **Software Development Engineer at Hitachi Vantara**,
 |  |  |
 | --- | --- |
 | **Languages** | Python, Java, SQL, Bash |
-| **Data Engineering** | PySpark, Pentaho PDI, FME, SSIS, dbt, Airflow, Kafka, Apache Iceberg |
+| **Data Engineering** | Databricks, PySpark, SSIS, dbt, Airflow, Kafka, Apache Iceberg |
 | **Cloud & Infra** | AWS (S3, Redshift, Glue, EC2), Snowflake, Docker, Jenkins CI/CD, GitHub Actions |
 | **LLM & AI** | Claude, GPT-4, Gemini, FastAPI, OpenAPI tool-calling agents, prompt engineering |
 | **ML & Search** | scikit-learn, TensorFlow, FAISS, Sentence Transformers, BM25, XGBoost, SHAP |
 | **BI & Analytics** | Power BI (DAX, RLS), Tableau, SSRS, Advanced Excel |
 | **Databases** | Oracle, SQL Server, Snowflake, Redshift, DuckDB, MongoDB, MariaDB |
 
-**Certifications:** AWS Certified Solutions Architect – Associate · DataCamp Certified Data Engineer · Professional Scrum Product Owner I (PSPO-I)
+**Certifications:** AWS Certified Solutions Architect – Associate · DataCamp Certified Data Engineer · Databricks Fundamentals · Professional Scrum Product Owner I (PSPO-I)
 
 ---
 
