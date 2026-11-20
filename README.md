@@ -8,7 +8,7 @@
 
 I build data pipelines, search systems, ML models, and LLM-powered applications — and I care about making them production-grade, not just notebook-grade.
 
-In my previous role as a **Data Analytics Engineer (Research Assistant)** at the [Texas Real Estate Research Center](https://www.recenter.tamu.edu/), I worked on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), built automated ETL workflows in FME, and refactored legacy SQL into performant set-based operations.
+In my previous role as a **Data Analytics Engineer (Research Assistant)** at a university research center, I worked on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), built automated ETL workflows in FME, and refactored legacy SQL into performant set-based operations.
 
 Before that, I worked as a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines (1TB/day) across Oracle/Snowflake/AWS using Pentaho PDI, integrated Kafka ingestion at 35K events/sec, and contributed 20+ merged PRs across 5 open-source Pentaho repositories.
 
@@ -36,29 +36,17 @@ Before that, I worked as a **Software Development Engineer at Hitachi Vantara**,
 Catalog-backed Apache Iceberg lakehouse (pyiceberg + DuckDB over S3 / LocalStack) with schema and partition evolution, snapshot time-travel, and Pandera data-quality gates over scheduled micro-batch ingestion. A read-only FastAPI serving layer exposes the lakehouse, and a human-in-the-loop NL agent answers data questions by calling that API as OpenAPI-derived tools — with bounded turn/tool budgets and snapshot-cited provenance. Deterministic CI via a `FakeLLMClient`, with GitHub Actions and coverage reporting.
 `Apache Iceberg · pyiceberg · DuckDB · FastAPI · Pandera · Docker · GitHub Actions`
 
-🚰 **[Rentals Data Pipeline](https://github.com/jairajsaraf/rentals-data-pipeline)**
-Production-style PySpark ETL pipeline processing Zillow ZORI rental data. Window functions for MoM rent change and state-level ranking, configurable data quality framework (warn/fail severity), partitioned Parquet output by geography and year. Orchestrated with Airflow TaskFlow DAG, dbt models over DuckDB for staging and mart layers, tested with pytest, CI via parallel GitHub Actions (lint + test).
-`PySpark · Airflow · dbt · DuckDB · AWS S3 · pytest · GitHub Actions`
+🔍 **[Hybrid Product Search Ranker](https://github.com/jairajsaraf/heb-product-search)**
+Product search built for the TAMU-25 H-E-B Datathon: a linear hybrid of BM25 and `all-MiniLM-L6-v2` embedding similarity over 3,287 products, served by FastAPI with a React frontend in one Docker container on Cloud Run. On 58 locked queries scored once, the official composite rose from 0.6273 (BM25 alone) to 0.6998, 95% CI on the gain [+0.0404, +0.1068]. RRF fusion and cross-encoder reranking were tested and not kept.
+`Python · Sentence Transformers · BM25 · FastAPI · React · Docker · Cloud Run`
 
 💬 **[PropTalk — Conversational Analytics](https://github.com/jairajsaraf/proptalk)**
 Ask questions about property data in plain English. An LLM writes SQL or pandas code, and a SELECT-only guard with a table allowlist checks it before it runs. The demo runs on synthetic data.
-`Python · Streamlit · Claude · GPT-4.1 · Gemini · SQL Server · pyodbc`
+`Python · Streamlit · SQLite · pandas · Plotly · Gemini (OpenAI-compatible API)`
 
-🔍 **[Hybrid Product Search Ranker](https://github.com/jairajsaraf/heb-product-search)**
-Hybrid BM25 + transformer embedding ranking system for e-commerce product search. Achieved 26% relative improvement over keyword-only baseline on 3,287 products. Built with Poetry, Pytest, and Fire CLI for reproducible evaluation across 12 configurations spanning 3 transformer models.
-`Python · Sentence Transformers · BM25 · Pytest · Poetry`
-
-📄 **[Regulatory Document Classifier API](https://github.com/jairajsaraf/document_classifier_AI)**
-FastAPI service classifying multi-modal documents (PDF/images) into regulatory categories using dual-LLM verification (Claude 3 Haiku + GPT-3.5). Includes PII detection with Luhn validation, Tesseract OCR integration, and audit-compliant citation generation. Reduced manual review by 65%.
-`FastAPI · Claude 3 Haiku · GPT-3.5 · Tesseract OCR · SQLite`
-
-🎵 **[FeatureBeats — Hit Song Predictor](https://github.com/jairajsaraf/FeatureBeats)**
-ML pipeline predicting commercial hits from Spotify audio features. Dual-model approach (Logistic Regression + XGBoost) with SHAP explainability, SMOTE variants for class imbalance, and a Streamlit UI for real-time predictions. 0.80–0.92 ROC-AUC.
-`Python · XGBoost · SHAP · Streamlit · scikit-learn`
-
-🍽️ **[Mai Shen Yun — Inventory Analytics Dashboard](https://github.com/jairajsaraf/mai-shen-yun)**
-5-module Streamlit dashboard for restaurant inventory management. Multi-method demand forecasting (Prophet, exponential smoothing, ensemble) with MAE/MAPE metrics. EOQ optimization, ABC classification, and reorder point calculations.
-`Python · Prophet · Streamlit · Plotly · Altair`
+🚰 **[Rentals Data Pipeline](https://github.com/jairajsaraf/rentals-data-pipeline)**
+Production-style PySpark ETL pipeline processing Zillow ZORI rental data. Window functions for MoM rent change and state-level ranking, configurable data quality framework (warn/fail severity), partitioned Parquet output by geography and year. Orchestrated with Airflow TaskFlow DAG, dbt models over DuckDB for staging and mart layers, tested with pytest, CI via parallel GitHub Actions (lint + test).
+`PySpark · Airflow · dbt · DuckDB · AWS S3 · pytest · GitHub Actions`
 
 ---
 
