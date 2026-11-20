@@ -6,15 +6,15 @@
 [![Email](https://img.shields.io/badge/Email-EA4335?logo=gmail&logoColor=white)](mailto:jairaj.saraf01@gmail.com)
 [![AWS Certified Solutions Architect – Associate](https://img.shields.io/badge/AWS_Certified-Solutions_Architect_Associate-FF9900?logo=amazonwebservices&logoColor=white)](https://www.credly.com/badges/c726335c-0a03-4a30-9b7a-b51b017d486c/public_url)
 
-I build data pipelines, search systems, ML models, and LLM-powered applications — and I care about making them production-grade, not just notebook-grade.
+I build data pipelines, search systems, ML models, and apps on top of LLMs. The part I care about is getting them out of the notebook and into something production-grade.
 
-In my previous role as a **Data Analytics Engineer (Research Assistant)** at a university research center, I worked on entity resolution across 18M+ property records using vector search (FAISS + sentence embeddings), built automated ETL workflows in FME, and refactored legacy SQL into performant set-based operations.
+Most recently I was a **Data Analytics Engineer (Research Assistant)** at a university research center. I did entity resolution across 18M+ property records with vector search (FAISS + sentence embeddings), built automated ETL workflows in FME, and rewrote legacy SQL as faster set-based queries.
 
-Before that, I worked as a **Software Development Engineer at Hitachi Vantara**, where I owned ETL pipelines (1TB/day) across Oracle/Snowflake/AWS using Pentaho PDI, integrated Kafka ingestion at 35K events/sec, and contributed 20+ merged PRs across 5 open-source Pentaho repositories.
+Before that I was a **Software Development Engineer at Hitachi Vantara**. I owned ETL pipelines moving 1TB/day across Oracle, Snowflake and AWS with Pentaho PDI, hooked up Kafka ingestion at 35K events/sec, and got 20+ PRs merged across 5 open-source Pentaho repos.
 
 ---
 
-### What I Work With
+### What I work with
 
 |  |  |
 | --- | --- |
@@ -30,32 +30,34 @@ Before that, I worked as a **Software Development Engineer at Hitachi Vantara**,
 
 ---
 
-### Featured Projects
+### Projects
 
-⚙️ **[Real-Time Agentic Data Platform](https://github.com/jairajsaraf/realtime-agentic-data-platform)**
-Catalog-backed Apache Iceberg lakehouse (pyiceberg + DuckDB over S3 / LocalStack) with schema and partition evolution, snapshot time-travel, and Pandera data-quality gates over scheduled micro-batch ingestion. A read-only FastAPI serving layer exposes the lakehouse, and a human-in-the-loop NL agent answers data questions by calling that API as OpenAPI-derived tools — with bounded turn/tool budgets and snapshot-cited provenance. Deterministic CI via a `FakeLLMClient`, with GitHub Actions and coverage reporting.
+The first three have live demos you can click around in.
+
+⚙️ **[Real-Time Agentic Data Platform](https://github.com/jairajsaraf/realtime-agentic-data-platform)** · [demo](https://jairajsaraf-rtdp-demo.hf.space/)
+A catalog-backed Apache Iceberg lakehouse (pyiceberg + DuckDB over S3 or LocalStack) with schema and partition evolution, snapshot time travel, and Pandera data-quality gates on scheduled micro-batch ingestion. A read-only FastAPI layer serves it. On top of that, a human-in-the-loop agent answers data questions by calling the API as OpenAPI-derived tools; it has caps on turns and tool calls, and its answers cite the snapshot they came from. CI on GitHub Actions runs the agent against a scripted fake LLM, so the tests are deterministic, and it reports coverage.
 `Apache Iceberg · pyiceberg · DuckDB · FastAPI · Pandera · Docker · GitHub Actions`
 
-🔍 **[Hybrid Product Search Ranker](https://github.com/jairajsaraf/heb-product-search)**
-Product search built for the TAMU-25 H-E-B Datathon: a linear hybrid of BM25 and `all-MiniLM-L6-v2` embedding similarity over 3,287 products, served by FastAPI with a React frontend in one Docker container on Cloud Run. On 58 locked queries scored once, the official composite rose from 0.6273 (BM25 alone) to 0.6998, 95% CI on the gain [+0.0404, +0.1068]. RRF fusion and cross-encoder reranking were tested and not kept.
+🔍 **[Hybrid Product Search Ranker](https://github.com/jairajsaraf/heb-product-search)** · [demo](https://heb-search-246501698420.us-central1.run.app/)
+Product search built for the TAMU-25 H-E-B Datathon. It blends BM25 keyword scores with `all-MiniLM-L6-v2` embedding similarity over 3,287 products, and FastAPI serves it with a React frontend, all in one Docker container on Cloud Run. On 58 locked queries scored once, the official composite went from 0.6273 (BM25 alone) to 0.6998, with a 95% CI on the gain of [+0.0404, +0.1068]. RRF fusion and cross-encoder reranking were tested too; neither passed the keep rule, so neither ships.
 `Python · Sentence Transformers · BM25 · FastAPI · React · Docker · Cloud Run`
 
-💬 **[PropTalk — Conversational Analytics](https://github.com/jairajsaraf/proptalk)**
-Ask questions about property data in plain English. An LLM writes SQL or pandas code, and a SELECT-only guard with a table allowlist checks it before it runs. The demo runs on synthetic data.
+💬 **[PropTalk: Conversational Analytics](https://github.com/jairajsaraf/proptalk)** · [demo](https://proptalk.streamlit.app/)
+Ask questions about property data in plain English. An LLM writes SQL or pandas code, and a SELECT-only guard with a table allowlist checks it before anything runs. The demo's data is all synthetic.
 `Python · Streamlit · SQLite · pandas · Plotly · Gemini (OpenAI-compatible API)`
 
 🚰 **[Rentals Data Pipeline](https://github.com/jairajsaraf/rentals-data-pipeline)**
-Production-style PySpark ETL pipeline processing Zillow ZORI rental data. Window functions for MoM rent change and state-level ranking, configurable data quality framework (warn/fail severity), partitioned Parquet output by geography and year. Orchestrated with Airflow TaskFlow DAG, dbt models over DuckDB for staging and mart layers, tested with pytest, CI via parallel GitHub Actions (lint + test).
+A production-style PySpark ETL pipeline over Zillow ZORI rental data. Window functions work out month-over-month rent change and state-level rankings, a configurable data-quality layer marks each check as warn or fail, and the output lands as Parquet partitioned by geography and year. Airflow (TaskFlow DAG) runs it, dbt models over DuckDB build the staging and mart layers, and GitHub Actions runs lint and pytest in parallel. There's no live demo for this one.
 `PySpark · Airflow · dbt · DuckDB · AWS S3 · pytest · GitHub Actions`
 
 ---
 
-### Open Source
+### Open source
 
-Contributed to the **Pentaho** ecosystem during my time at Hitachi Vantara — 20+ merged PRs across 5 repositories focused on plugin stability, chart-type features, and accessibility improvements (keyboard navigation, focus management) in the Analyzer web UI.
+At Hitachi Vantara I got 20+ PRs merged across 5 **Pentaho** repos. They covered plugin stability, chart-type features, and accessibility work in the Analyzer web UI (keyboard navigation, focus management).
 
 ---
 
-### Let's Connect
+### Get in touch
 
 📧 [jairaj.saraf01@gmail.com](mailto:jairaj.saraf01@gmail.com) · 💼 [LinkedIn](https://linkedin.com/in/jairajsaraf/) · 🐙 [GitHub](https://github.com/jairajsaraf)
